@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Serenity Suites</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <link href="img/favicon.png" rel="icon">
+        <link href="img/apple-favicon.png" rel="apple-touch-icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/slick/slick.css" rel="stylesheet">
+        <link href="vendor/slick/slick-theme.css" rel="stylesheet">
+        <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <link href="css/hover-style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="dashboard.html" class="logo"><img src="img/Mylogo.png" alt="logo"></a>
+            <div class="phone"><i  class="fa fa-phone"></i>+234 913 906 3696</div>
+            <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+            <nav class="main-menu top-menu">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="room.html">Rooms</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="user.html"><img width="30px" style="background-color: #FFD700; border-radius: 40%;" src="img/user.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="search" style="background: #f2f2f2;">
+            <div class="container">
+                <div class="form-row">
+                    <div class="control-group col-md-3">
+                        <label>Check-In</label>
+                        <div class="form-group">
+                            <div class="input-group date" id="date-3" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#date-3"/>
+                                <div class="input-group-append" data-target="#date-3" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <label>Check-Out</label>
+                        <div class="form-group">
+                            <div class="input-group date" id="date-4" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#date-4"/>
+                                <div class="input-group-append" data-target="#date-4" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <div class="form-row">
+                            <div class="control-group col-md-6">
+                                <label>Adult</label>
+                                <select class="custom-select">
+                                    <option selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="control-group col-md-6 kid">
+                                <label>Kid</label>
+                                <select class="custom-select">
+                                    <option selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <button class="btn btn-block">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Rooms</h2>
+                    <p>
+                        Make joyful memories.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-1.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Single</a></h3>
+                                    <p>Cozy and comfortable, ideal for solo travelers</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 260 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$150</h1>
+                                    <a href="#" class="book-now" data-room="Standard Single" data-price="150">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-2.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Double</a></h3>
+                                    <p>Perfect for couples or friends traveling together</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 350 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$200</h1>
+                                    <a href="#" class="book-now" data-room="Standard Double" data-price="200">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-3.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Premium Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Premium Single</a></h3>
+                                    <p>Spacious room with a king-sized bed for maximum comfort.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 200 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$220</h1>
+                                    <a href="#" class="book-now" data-room="Premium Single" data-price="220">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-4.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Silver Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Silver Double</a></h3>
+                                    <p>Stylish and spacious with room for two guests.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 200 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$180</h1>
+                                    <a href="#" class="book-now" data-room="Silver Double" data-price="180">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-5.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Premium Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Premium Double</a></h3>
+                                    <p>Luxurious and spacious, ideal for a comfortable stay.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 450 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$400</h1>
+                                    <a href="#" class="book-now" data-room="Premium Double" data-price="400">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/hotel 1.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Deluxe Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Deluxe Single</a></h3>
+                                    <p>A spacious room with elegant decor and modern amenities.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 300 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 Queen </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$120</h1>
+                                    <a href="#" class="book-now" data-room="Deluxe Single" data-price="120">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/hotel 2.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Deluxe Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Deluxe Double</a></h3>
+                                    <p> Stylish furnishings with extra space for relaxation.
+                                    </p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 450 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Queen(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$150</h1>
+                                    <a href="#" class="book-now" data-room="Deluxe Double" data-price="150">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image 3.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Executive Suite</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Executive Suite</a></h3>
+                                    <p>A large suite with a separate living area and upscale amenities.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 600 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$350</h1>
+                                    <a href="#" class="book-now" data-room="Executive Suite" data-price="350">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image 3.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Family Suite</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Family Suite</a></h3>
+                                    <p>A suite designed for families with ample space.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 500 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King + 1 Queen + 3 Twin </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$550</h1>
+                                    <a href="#" class="book-now" data-room="Family Suite" data-price="550">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image 5.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Luxury King Room</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Luxury King Room</a></h3>
+                                    <p>An opulent room with premium furnishings and spacious layout.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 450 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$700 </h1>
+                                    <a href="#" class="book-now" data-room="Luxury King Room" data-price="700">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image10.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Penthouse Suite</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Penthouse Suite</a></h3>
+                                    <p>A top-floor suite with stunning views and luxurious amenities.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 800 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$1000 </h1>
+                                    <a href="#" class="book-now" data-room="Penthouse Suite" data-price="1000">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image8.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Garden View Room</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Garden View Room</a></h3>
+                                    <p>A tranquil room with beautiful garden views.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 800 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King + 1 Queen </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$1370 </h1>
+                                    <a href="#" class="book-now" data-room="Garden View Room" data-price="1370">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/image11.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Ocean View Room</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Ocean View Room</a></h3>
+                                    <p> A stunning room with breathtaking ocean views.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 400 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King or 2 Double </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$1080 </h1>
+                                    <a href="#" class="book-now" data-room="Ocean View Room" data-price="1080">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/iMAGE6.avif">
+                                        <div class="box-content">
+                                            <h3 class="title">Accessible Room</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Accessible Room</a></h3>
+                                    <p>Designed for accessibility with grab bars and wider doorways.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 350 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 Queen </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$600 </h1>
+                                    <a href="#" class="book-now" data-room="Accessible Room" data-price="600">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/romantic.avif ">
+                                        <div class="box-content">
+                                            <h3 class="title"> Honeymoon Suite</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i
+                                                            class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Honeymoon Suite</a></h3>
+                                    <p> A romantic suite with a jacuzzi and special amenities for couples.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 600 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$465 </h1>
+                                    <a href="#" class="book-now" data-room="Honeymoon Suite" data-price="465">Book Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal-id" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="port-slider">
+                                    <div><img src="img/room-slider/room-1.jpg"></div>
+                                    <div><img src="img/room-slider/room-2.jpg"></div>
+                                    <div><img src="img/room-slider/room-3.jpg"></div>
+                                    <div><img src="img/room-slider/room-4.jpg"></div>
+                                    <div><img src="img/room-slider/room-5.jpg"></div>
+                                    <div><img src="img/room-slider/room-6.jpg"></div>
+                                    <div><img src="img/room-slider/1.avif"></div>
+                                    <div><img src="img/room-slider/2.avif"></div>
+                                    <div><img src="img/room-slider/3.avif"></div>
+                                    <div><img src="img/room-slider/4.avif"></div>
+                                    <div><img src="img/room-slider/5.avif"></div>
+                                    <div><img src="img/room-slider/6.avif"></div>
+                                    <div><img src="img/room-slider/7.avif"></div>
+                                    <div><img src="img/room-slider/8.avif"></div>
+                                    <div><img src="img/room-slider/image12.avif"></div>
+                                    <div><img src="img/room-slider/image13.avif"></div>
+                                    <div><img src="img/room-slider/10.avif"></div>
+                                    <div><img src="img/room-slider/12.avif"></div>
+                                    <div><img src="img/room-slider/13.avif"></div>
+                                    <div><img src="img/room-slider/14.avif"></div>
+                                    <div><img src="img/room-slider/15.jpg"></div>
+                                </div>
+                                <div class="port-slider-nav">
+                                    <div><img src="img/room-slider/room-1.jpg"></div>
+                                    <div><img src="img/room-slider/room-2.jpg"></div>
+                                    <div><img src="img/room-slider/room-3.jpg"></div>
+                                    <div><img src="img/room-slider/room-4.jpg"></div>
+                                    <div><img src="img/room-slider/room-5.jpg"></div>
+                                    <div><img src="img/room-slider/room-6.jpg"></div>
+                                    <div><img src="img/room-slider/1.avif"></div>
+                                    <div><img src="img/room-slider/2.avif"></div>
+                                    <div><img src="img/room-slider/3.avif"></div>
+                                    <div><img src="img/room-slider/4.avif"></div>
+                                    <div><img src="img/room-slider/5.avif"></div>
+                                    <div><img src="img/room-slider/6.avif"></div>
+                                    <div><img src="img/room-slider/7.avif"></div>
+                                    <div><img src="img/room-slider/8.avif"></div>
+                                    <div><img src="img/room-slider/image12.avif"></div>
+                                    <div><img src="img/room-slider/image13.avif"></div>
+                                    <div><img src="img/room-slider/10.avif"></div>
+                                    <div><img src="img/room-slider/12.avif"></div>
+                                    <div><img src="img/room-slider/13.avif"></div>
+                                    <div><img src="img/room-slider/14.avif"></div>
+                                    <div><img src="img/room-slider/15.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>More About Our Rooms</h2>
+                                <p>
+                                    Step into our Rooms, where comfort meets elegance. Spanning 250 and above sq ft, this
+                                    spacious room is designed with modern travelers in mind. As you enter, you’ll be greeted
+                                    by a serene atmosphere, accentuated by warm lighting, soft neutral tones, and sleek
+                                    contemporary furnishings.
+    
+                                    The room features a plush sized bed, dressed in linens to ensure a restful night's
+                                    sleep. The oversized windows allow natural light to flood the space during the day,
+                                    offering stunning views of the city skyline or tranquil garden, depending on the room
+                                    location.
+    
+                                    For your convenience, the room is equipped with a 42-inch flat-screen TV, perfect for
+                                    unwinding with your favorite shows or movies. Stay connected with complimentary
+                                    high-speed WiFi, and enjoy the convenience of a well-stocked mini bar and a cozy seating
+                                    area where you can relax or catch up on work.
+                                </p>
+                                <div class="modal-link">
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="social">
+                            <a href=""><li class="fa fa-instagram"></li></a>
+                            <a href=""><li class="fa fa-twitter"></li></a>
+                            <a href=""><li class="fa fa-facebook-f"></li></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p>Copyright &#169; 2045 <a href="">Serenity Suite</a> All Rights Reserved.</p>
+						
+                        <p>Designed By <a href="#" target="_blank">Ademola Elisha</a><a href="https://adey-square.vercel.app" target="_blank"> & Adey Square</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery-migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/easing/easing.min.js"></script>
+        <script src="vendor/stickyjs/sticky.js"></script>
+        <script src="vendor/superfish/hoverIntent.js"></script>
+        <script src="vendor/superfish/superfish.min.js"></script>
+        <script src="vendor/wow/wow.min.js"></script>
+        <script src="vendor/slick/slick.min.js"></script>
+        <script src="vendor/tempusdominus/js/moment.min.js"></script>
+        <script src="vendor/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <script src="js/booking.js"></script>
+        <script src="js/jqBootstrapValidation.min.js"></script>
+  
+        <script src="js/main.js"></script>
+    </body>
+</html>

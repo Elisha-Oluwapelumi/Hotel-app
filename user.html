@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-favicon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/slick/slick.css" rel="stylesheet">
+    <link href="vendor/slick/slick-theme.css" rel="stylesheet">
+    <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/hover-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    span {
+        color: #666;
+        font-size: large;
+    }
+
+    p {
+        color: rgba(180, 134, 73, 0.671);
+        font-size: 20px !important;
+    }
+
+    h1 {
+        color: #FFD700;
+        margin-top: 10px;
+    }
+
+    button {
+        border: none;
+        width: 100px;
+        height: 43px;
+        border-radius: 30px;
+        outline: none;
+        background-color: #666;
+        color: #FFD700;
+        font-style: italic;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .username-letters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #FFD700;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 700;
+        margin-left: 100px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <header id="header">
+        <a href="dashboard.html" class="logo"><img src="img/Mylogo.png" alt="logo"></a>
+        <div class="phone"><i class="fa fa-phone"></i>+234 913 906 3696</div>
+        <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+        <nav class="main-menu top-menu">
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="room.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="active"><a href="user.html"><img width="30px"  style="background-color: #FFD700; border-radius: 40%; margin-top: 10px;" src="img/user.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="text-align: center; display: flex; justify-content: center; gap: 20px; flex-direction: column; align-items: center;">
+        <h1>Welcome To Dashboard</h1>
+        <div class="card align-content-center" style="box-shadow: 5px 5px 5px 5px #FFD700; padding: 4px; border-radius: 20px; width: 400px;">
+            <div class="username-letters" id="usernameLetters"></div>
+            <div class="card-body">
+                <p class="card-text" style="text-transform: capitalize; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: 700;">
+                    Username: <span id="usernames"></span>
+                </p>
+                <p class="card-text" style="text-transform: capitalize; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: 700;">
+                    Firstname: <span id="firstnames"></span>
+                </p>
+                <p class="card-text" style="text-transform: capitalize; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: 700;">
+                    Lastname: <span id="lastnames"></span>
+                </p>
+                <p class="card-text" style="text-transform: capitalize; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: 700;">
+                    Phone: <span id="phones"></span>
+                </p>
+                <p class="card-text" style="text-transform: capitalize; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: 700;">
+                    Email: <span id="emails"></span>
+                </p>
+            </div>
+            <div>
+                <button onclick="Logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        let users = JSON.parse(localStorage.getItem('userssignedup'));
+        let current_user_index = localStorage.getItem('userloggedin') ? Number(localStorage.getItem('userloggedin')) : null;
+
+        let firstname = users[current_user_index].input1;
+        let lastname = users[current_user_index].input2;
+        let email = users[current_user_index].input3;
+        let phonenumber = users[current_user_index].input7;
+        let username = users[current_user_index].input4;
+
+        usernames.innerHTML = `${username}`;
+        firstnames.innerHTML = `${firstname}`;
+        lastnames.innerHTML = `${lastname}`;
+        phones.innerHTML = `${phonenumber}`;
+        emails.innerHTML = `${email}`;
+
+        let initials = username.slice(0, 2).toUpperCase();
+        document.getElementById('usernameLetters').innerHTML = initials;
+
+        const Logout = () => {
+            localStorage.removeItem('userloggedin');
+            alert("You have been successfully logged out.");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
