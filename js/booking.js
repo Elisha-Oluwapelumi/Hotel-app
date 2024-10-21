@@ -1,4 +1,3 @@
-// booking.js
 document.addEventListener('DOMContentLoaded', function () {
     const bookNowButtons = document.querySelectorAll('.book-now');
 
@@ -69,11 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function displayBookings() {
-       
         let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
         const bookingList = document.getElementById('booking-list');
 
-       
         bookingList.innerHTML = '';
 
         if (bookings.length > 0) {

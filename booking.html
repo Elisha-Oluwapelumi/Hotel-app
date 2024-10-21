@@ -115,6 +115,29 @@
     <div id="booking-list"></div>
 </div>
 
+<!-- Modal for Room Selection -->
+<div id="room-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select a Room</h2>
+        <div id="room-options">
+            <div class="room-option" data-price="200">
+                <h4>Deluxe Room</h4>
+                <p>Price: $200</p>
+            </div>
+            <div class="room-option" data-price="150">
+                <h4>Standard Room</h4>
+                <p>Price: $150</p>
+            </div>
+            <div class="room-option" data-price="300">
+                <h4>Suite</h4>
+                <p>Price: $300</p>
+            </div>
+        </div>
+        <button id="confirm-selection">Confirm Selection</button>
+    </div>
+</div>
+
 
 
     <div id="booking">
@@ -224,6 +247,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery/jquery-migrate.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="vendor/easing/easing.min.js"></script>
     <script src="vendor/stickyjs/sticky.js"></script>
     <script src="vendor/superfish/hoverIntent.js"></script>
