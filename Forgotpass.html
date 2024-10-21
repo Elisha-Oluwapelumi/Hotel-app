@@ -19,6 +19,8 @@
     </form>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
 let usersignupdetails = JSON.parse(localStorage.getItem("userssignedup")) || [];
 
@@ -32,10 +34,22 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
 
     if (userExists) {
         localStorage.setItem('userResetIndex', usersignupdetails.indexOf(userExists));
-        alert("User Found");
+        Swal.fire({
+    title: 'Success!',
+    text: 'User Found',
+    icon: 'success',
+    confirmButtonText: 'OK'
+});
+
         window.location.href = "reset-password.html";
     } else {
-        alert("User not found. Please check your email or username.");
+        Swal.fire({
+    title: 'Error!',
+    text: 'User not found. Please check your email or username.',
+    icon: 'error',
+    confirmButtonText: 'Try Again'
+});
+
     }
 });
 </script>

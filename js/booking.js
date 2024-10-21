@@ -15,7 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (checkIn && checkOut) {
                 payWithPaystack(room, price, checkIn, checkOut, specialRequest);
             } else {
-                alert("Booking cancelled. Please provide valid check-in and check-out dates.");
+                alert("");
+                Swal.fire({
+                    title: "Error!",
+                    text: "Booking cancelled. Please provide valid check-in and check-out dates.!",
+                    icon: "error"
+                  });
             }
         });
     });
@@ -25,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             key: 'pk_test_42badfc7543f1620c47d0274527f3536bef546e7', 
             email: 'SerenitySuites123@gmail.com', 
             amount: price * 100, 
-            currency: 'NGN',
+            currency: 'USD',
             callback: function(response) {
                 let transactionReference = response.reference;
 
@@ -44,10 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 localStorage.setItem('bookings', JSON.stringify(bookings));
 
-                alert(`Payment complete! You have successfully booked the ${room} for $${price}. Your payment reference is ${transactionReference}.`);
+                Swal.fire({
+                    title: 'Payment Complete!',
+                    text: `You have successfully booked the ${room} for $${price}. Your payment reference is ${transactionReference}.`,
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+                
             },
             onClose: function() {
-                alert('Payment cancelled.');
+                Swal.fire({
+                    title: "Error!",
+                    text: "Payment cancelled.!",
+                    icon: "error"
+                  });
             }
         });
 

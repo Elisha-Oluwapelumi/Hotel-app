@@ -78,10 +78,18 @@ document.querySelector('#subscriptionForm').addEventListener('submit', function(
 
     emailjs.send('service_rh3b7ij', 'template_xq6bo2e', templateParams)
         .then(function(response) {
-            alert('Subscription successful! Check your email for confirmation.');
+            Swal.fire({
+                title: "Good job!",
+                text: "Subscription successful! Check your email for confirmation.!",
+                icon: "success"
+              });
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
-            alert('Failed to send subscription confirmation. Please try again later.');
+            Swal.fire({
+                title: "Error!",
+                text: "Failed to send subscription confirmation. Please try again later.!",
+                icon: "error"
+              });
             console.log('FAILED...', error);
         });
 });

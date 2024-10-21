@@ -35,10 +35,21 @@ const Login = () => {
 	}
 
 	if (Userfound) {
-		alert("You Have Been Sucessfully LoggedIn")
+		Swal.fire({
+			title: 'Success!',
+			text: 'You have been successfully logged in.',
+			icon: 'success',
+			confirmButtonText: 'Okay'
+		})
 		window.location.href = "dashboard.html"
 	}else {
-		alert('Invalid Credentials or Account Has Not Been Registered')
+		Swal.fire({
+			title: 'Error!',
+			text: 'Invalid credentials or account has not been registered.',
+			icon: 'error',
+			confirmButtonText: 'Try Again'
+		});
+		
 
 	}
 

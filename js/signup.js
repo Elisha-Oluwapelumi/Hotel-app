@@ -17,17 +17,53 @@ const Signup = () => {
     let usernameExists = usersignupdetails.some(user => user.input4 === input4);
 
     if (input1 == "" || input2 == "" || input3 == "" || input4 == "" || input7 == "") {
-        alert("Please Fill in all Spaces");
+        Swal.fire({
+            title: 'Warning!',
+            text: 'Please fill in all spaces.',
+            icon: 'warning',
+            confirmButtonText: 'OK'
+        });
+        
     } else if (input5 !== input6) {
-        alert("Password Mismatch");
+        Swal.fire({
+            title: 'Error!',
+            text: 'Password mismatch. Please try again.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+        
     } else if (input8) {
-        alert("Please mark the Remember me");
+        Swal.fire({
+            title: 'Attention!',
+            text: 'Please mark the "Remember me" checkbox.',
+            icon: 'warning',
+            confirmButtonText: 'OK'
+        });
+        
     } else if (emailExists) {
-        alert("This email is already registered");
+        Swal.fire({
+            title: 'Registration Error',
+            text: 'This email is already registered.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+        
     } else if (usernameExists) {
-        alert("This username is already taken");
+        Swal.fire({
+            title: 'Registration Error',
+            text: 'This username is already taken.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+        
     } else {
-        alert("Account Created Successfully");
+        Swal.fire({
+            title: 'Success!',
+            text: 'Account Created Successfully.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+        
         let usersignedup = {
             input1,
             input2,
